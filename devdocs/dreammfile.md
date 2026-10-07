@@ -23,21 +23,21 @@ There’s a lot to go over, so let’s break things up like this:
    * [System Properties](#system-properties)
 
 * [Object Descriptions](#object-descriptions)
-   * [desc](#desc-objects)
-   * [game](#variant-objects)
-   * [demo](#variant-objects)
-   * [installer](#variant-objects)
-   * [upgrader](#variant-objects)
-   * [addon](#variant-objects)
-   * [fragment](#variant-objects)
-   * [mount](#mount-objects)
-   * [config](#config-objects)
-   * [option](#option-objects)
-   * [configutil](#configutil-objects)
-   * [warning](#warning-objects)
-   * [script](#script-objects)
-   * [charset](#charset-objects)
-   * [file](#file-objects)
+   * [desc objects](#desc-objects)
+   * [game objects](#variant-objects)
+   * [demo objects](#variant-objects)
+   * [installer objects](#variant-objects)
+   * [upgrader objects](#variant-objects)
+   * [addon objects](#variant-objects)
+   * [fragment objects](#variant-objects)
+   * [mount objects](#mount-objects)
+   * [config objects](#config-objects)
+   * [option objects](#option-objects)
+   * [configutil objects](#configutil-objects)
+   * [warning objects](#warning-objects)
+   * [script objects](#script-objects)
+   * [charset objects](#charset-objects)
+   * [file objects](#file-objects)
 
 
 ## Core Concepts
@@ -339,7 +339,6 @@ DREAMM has a collection of standard variables available to all files.
 |`$(MIPS_MAX)`|"1000"|
 
 
-
 ### System Properties
 
 When starting a game in DREAMM, all the properties are assembled into a final property set in the following manner:
@@ -355,7 +354,7 @@ This final set of properties is then queried by the game to control certain para
 The list below describes each property, its potential values, and what it controls.
 
 |Property|Meaning|
-|--------|-------|
+|:--------:|-------|
 |__altkeys__|Optional for all systems. Specifies which Alt keys are used by the game, to prevent DREAMM from using them.  Use `*` to indicate the `F12` key. For example, `altkeys=at1*` tells DREAMM to disable its internal `Alt-A`, `Alt-T`, and `Alt-1` shortcuts, as well as the `F12` key. |
 |__drivetypes__|Optional for all systems. Specifies what type of drive is associated with each drive letter. See the [drivetypes](#drivetypes) full description below for details. |
 |__fastmovs__|Optional for all systems. Specifies whether to optimize `REP MOVS` operations. This is useful for reducing CPU requirements on some games, but can produce compatibility issues.|
@@ -370,7 +369,7 @@ The list below describes each property, its potential values, and what it contro
  These properties only apply to __dos__ systems:
 
 |Property|Meaning|
-|--------|-------|
+|:--------:|-------|
 |__audiohw__|Optional for __dos__ systems. Specifies the audio hardware installed on the system. Supported values are: __speaker__, __cms__, __adlib__, __sb16__, __mt32__, or __gmidi__. Multiple systems can be installed at once by combining with a `+` separator. For example `mt32+sb16`. To enable Tandy/PCjr audio use `machine=tandy`.|
 |__dosfiles__|Optional for __dos__ systems. This value is the equivalent of the `CONFIG.SYS` __FILES__ option, and specifies the maximum number of simultaneous open files each DOS program can have. The default value is 20.|
 |__dosmem__|Optional for __dos__ systems. Specifies one or more comma-separated memory configuration options for DOS machines. Possible values include: __noems__ to disable the EMS driver, even if more than 1MB of RAM is configured; or __noxms__ to disable the XMS driver, even if more than 1MB of RAM is configured.|
@@ -381,7 +380,7 @@ The list below describes each property, its potential values, and what it contro
 These properties only apply to __windows__ systems:
 
 |Property|Meaning|
-|--------|-------|
+|:--------:|-------|
 |__audiohw__|Optional for __windows__ systems. If present, the only supported option on Windows is __gmidi__, which enables the Windows MIDI system.|
 |__locale__|Optional for __windows__ systems. Specifies the system locale when launching a game. Only these locales are currently supported: __en-US__, __de-DE__, __fr-FR__, __es-ES_tradnl__, __it-IT__, __ja-JP__, __zh-CN__, __zh-TW__, __ko-KR__.|
 |__maxfps__|Optional for __windows__ systems. Specifies the maximum frame rate for emulated video modes. By default, video modes run at typical refresh rates; however, for some games it may be beneficial to limit this to improve compatibility or reduce CPU load.
@@ -419,7 +418,7 @@ By convention the id is of the form `<companyid>`-`<gamename>`.
 The following `<companyid>` values have been defined:
 
 |id|Company|
-|---|---|
+|:---:|---|
 |has|Hasbro Interactive|
 |lec|Lucasfilm Games/LucasArts Entertainment Company|
 |lll|Lucas Learning Ltd|
