@@ -13,13 +13,13 @@ There’s a lot to go over, so let’s break things up like this:
 * [Core Concepts](#core-concepts)
    * [Properties](#properties)
    * [Variable Substitution](#variable-substitution)
-   * [Multi-Line Values](#multiline-values)
+   * [Multi-Line Values](#multi-line-values)
    * [Objects](#objects)
    * [Conditional Objects](#conditional-objects)
 
 * [File Structure](#file-structure)
    * [Object Hierarchy](#object-hierarchy)
-   * [Built-In Variables](#builtin-variables)
+   * [Built-In Variables](#built-in-variables)
    * [System Properties](#system-properties)
 
 * [Object Descriptions](#object-descriptions)
@@ -676,7 +676,7 @@ The following properties are defined for script objects:
 |Property|Meaning|
 |:--------:|-------|
 |__condition__|Optional. Specifies the condition under which to this warning is to be shown. See [Conditional Objects](#conditional-objects) for more detail.
-|__code__|Required. This is the code of the script. For a complete description of DREAMM’s scripting language, please see the [DREAMMScript Reference](dreammscript.md). Because scripts are usually longer than a single line, it is common to use the [multi-line](#multiline-values) mechanism when specifying the code, as seen above.
+|__code__|Required. This is the code of the script. For a complete description of DREAMM’s scripting language, please see the [DREAMMScript Reference](dreammscript.md). Because scripts are usually longer than a single line, it is common to use the [multi-line](#multi-line-values) mechanism when specifying the code, as seen above.
 
 
  <a name='file'></a>
